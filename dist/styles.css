@@ -1,0 +1,88 @@
+@font-face {
+  src: url("./src/fonts/Manrope-Regular.ttf");
+  font-family: Manrope400;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("./src/fonts/Manrope-Medium.ttf");
+  font-family: Manrope500;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("./src/fonts/Manrope-Regular.ttf");
+  font-family: Manrope400;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("./src/fonts/Manrope-Medium.ttf");
+  font-family: Manrope500;
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Manrope500, sans-serif;
+}
+
+.main {
+  padding: 36px 40px;
+}
+.main .container {
+  margin: 0 auto;
+  max-width: 1920px;
+  background: #EBF0FA;
+  display: flex;
+  justify-content: space-between;
+}
+.main .container .main__info {
+  padding: 102px 0 102px 72px;
+}
+.main .container .main__info .main__title {
+  font-size: 30px;
+  color: #1F4284;
+  margin-bottom: 18px;
+}
+.main .container .main__info .main__text {
+  color: rgb(114, 114, 114);
+  font-family: Manrope400, sans-serif;
+  font-size: 17px;
+  line-height: 160%;
+  width: 511px;
+  margin-bottom: 36px;
+}
+.main .container .main__info .main__action {
+  display: flex;
+  justify-content: flex-start;
+}
+.main .container .main__info .main__action .btn {
+  background: #244C98;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: none;
+  font-family: Manrope500, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.main .container .main__info .main__action .btn.main__btn {
+  border-radius: 60px;
+  padding: 12px 12px 12px 24px;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .container .main__info .main__action .btn span {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */

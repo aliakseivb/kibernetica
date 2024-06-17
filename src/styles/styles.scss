@@ -1,0 +1,60 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Manrope500, sans-serif;
+}
+
+.main {
+  padding: 36px 40px;
+  .container {
+    margin: 0 auto;
+    max-width: 1920px;
+    background: $bg-color;
+    display: flex;
+    justify-content: space-between;
+
+    .main__info {
+      padding: 102px 0 102px 72px;
+      .main__title {
+        font-size: 30px;
+        color: $common-color;
+        margin-bottom: 18px;
+      }
+      .main__text {
+        color: rgb(114, 114, 114);
+        font-family: Manrope400, sans-serif;
+        font-size: 17px;
+        line-height: 160%;
+        width: 511px;
+        margin-bottom: 36px;
+      }
+      .main__action {
+        display: flex;
+        justify-content: flex-start;
+
+        .btn {
+          @include btn;
+          &.main__btn {
+            border-radius: 60px;
+            padding: 12px 12px 12px 24px;
+            width: 340px;
+            display: flex;
+            justify-content: space-between;
+          }
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @import "variables";
 @import "fonts";
 
-@mixin button-primary {
+@mixin btn {
   background: $btn-color;
   cursor: pointer;
   color: #FFFFFF;
