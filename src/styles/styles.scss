@@ -15,46 +15,81 @@ body {
 
 .main {
   padding: 36px 40px;
+
   .container {
     margin: 0 auto;
     max-width: 1920px;
+    border-radius: 10px;
+    overflow: hidden;
     background: $bg-color;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .main__info {
-      padding: 102px 0 102px 72px;
+      padding: 110px 0 110px 75px;
+      max-width: 570px;
+      margin-right: 20px;
+
       .main__title {
         font-size: 30px;
         color: $common-color;
         margin-bottom: 18px;
       }
+
       .main__text {
         color: rgb(114, 114, 114);
         font-family: Manrope400, sans-serif;
         font-size: 17px;
         line-height: 160%;
-        width: 511px;
         margin-bottom: 36px;
       }
+
       .main__action {
         display: flex;
         justify-content: flex-start;
 
         .btn {
           @include btn;
+
           &.main__btn {
             border-radius: 60px;
             padding: 12px 12px 12px 24px;
             width: 340px;
             display: flex;
             justify-content: space-between;
+
+            &:hover {
+              background: #222b3b;
+            }
           }
+
           span {
             font-size: 18px;
+          }
+          .btn-svg {
+            height: 44px;
+            svg {
+              height: 100%;
+            }
           }
         }
       }
     }
+
+    .main__image {
+      background-image: url("../src/images/main.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 910px;
+      height: 466px;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }
+
+@import "adaptive";
