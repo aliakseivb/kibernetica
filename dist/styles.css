@@ -25,7 +25,6 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -107,6 +106,131 @@ body {
 }
 .main .container .main__image img {
   max-width: 100%;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto 30px;
+  background: #EBF0FA;
+  position: relative;
+  padding: 80px 24px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+form .close {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 24px;
+  right: 24px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+form .close .close-btn {
+  width: 24px;
+  height: 24px;
+  background-image: url("../src/images/x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s linear;
+}
+form .close:hover {
+  cursor: pointer;
+}
+form .close:hover .close-btn {
+  transform: rotate(180deg);
+}
+form .form__title {
+  font-size: 24px;
+  color: #323232;
+  margin-bottom: 18px;
+}
+form .form__inputs {
+  margin-bottom: 24px;
+}
+form .form__inputs .form-input {
+  width: calc(100% - 48px);
+  padding: 24px;
+  font-size: 18px;
+  color: #1F4284;
+  border-radius: 10px;
+  background: #D7E2F6;
+  border: none;
+  outline: none;
+}
+form .form__inputs .form-input:first-child {
+  margin-bottom: 4px;
+}
+form .form__inputs .form-input::placeholder {
+  color: #1F4284;
+}
+form .form__confirm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+form .form__confirm #confirm {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+  position: relative;
+  background: #EBF0FA;
+}
+form .form__confirm #confirm:after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 2px solid #323232;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form .form__confirm label {
+  font-family: Manrope400, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+form .restore {
+  font-size: 20px;
+  margin-bottom: 36px;
+  color: #244C98;
+  cursor: pointer;
+}
+form .form__btn {
+  width: 452px;
+  height: 65px;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #244C98;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+form .form__btn.signin {
+  background: #244C98;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+form .form__btn.signin:hover {
+  background: #222b3b;
+}
+form .form__btn.signup {
+  color: #244C98;
+}
+form .form__btn.signup:hover {
+  background: #222b3b;
+  color: #ffffff;
 }
 
 @font-face {
