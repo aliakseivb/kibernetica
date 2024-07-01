@@ -217,18 +217,18 @@ form .form__btn {
   box-sizing: border-box;
   cursor: pointer;
 }
-form .form__btn.signin {
+form .form__btn.sign-in {
   background: #244C98;
   color: #ffffff;
   margin-bottom: 4px;
 }
-form .form__btn.signin:hover {
+form .form__btn.sign-in:hover {
   background: #222b3b;
 }
-form .form__btn.signup {
+form .form__btn.sign-up {
   color: #244C98;
 }
-form .form__btn.signup:hover {
+form .form__btn.sign-up:hover {
   background: #222b3b;
   color: #ffffff;
 }
