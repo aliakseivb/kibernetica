@@ -216,7 +216,7 @@ form {
     cursor: pointer;
 
 
-    &.signin {
+    &.sign-in {
       background: $btn-color;
       color: #ffffff;
       margin-bottom: 4px;
@@ -224,7 +224,7 @@ form {
         background: #222b3b;
       }
     }
-    &.signup {
+    &.sign-up {
       color: $btn-color;
       &:hover {
         background: #222b3b;
